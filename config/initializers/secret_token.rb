@@ -1,0 +1,2 @@
+Blocitoff::Application.config.secret_key_base = '50a7e6c2fb5ba80f670c070147ccc97c5d99e33d7c1d671629297c57c307d18dc56b25ac26febc56
+093b386ccc37d22e0fbcb2df67dfd89b0d809adbc2ecbba6'
