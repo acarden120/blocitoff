@@ -1,0 +1,21 @@
+# Add configuration values here, as shown below.
+#
+# pusher_app_id: "2954"
+# pusher_key: 7381a978f7dd7f9a1117
+# pusher_secret: abdc3b896a0ffb85d373
+# stripe_api_key: sk_test_2J0l093xOyW72XUYJHE4Dv2r
+# stripe_publishable_key: pk_test_ro9jV5SNwGb1yYlQfzG17LHK
+#
+# production:
+#   stripe_api_key: sk_live_EeHnL644i6zo4Iyq4v1KdV9H
+#   stripe_publishable_key: pk_live_9lcthxpSIHbGwmdO941O1XVU
+SENDGRID_PASSWORD: app35779408@heroku.com
+SENDGRID_USERNAME: y0e5hyfz
+#SECRET_KEY_BASE: Bloccit::Application.config.secret_key_base = ca300340bf8a43e85c7f29a235a2d7e036e2aac5597b0e8c46889ddc64da91b5b046e59eaa76ceb0bf1b1bf4e6d033737da4d814d45cf782a3e9286847c9ee15
+SECRET_KEY_BASE: 5972cf3a8a075bad021a8f6d63e16c7be1c9520e1b046d704fe63cad3f8371251517e98aecd53cc523ee83bf9bb991d8d894a061ea5589ff708efadbe881f4e9
+AWS_ACCESS_KEY_ID: AKIAIZMOTWOOWX3NK7IQ
+AWS_SECRET_ACCESS_KEY: 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
+development:
+  AWS_BUCKET: s353-bloccit-development
+production:
+  AWS_BUCKET: s353-bloccit-production
