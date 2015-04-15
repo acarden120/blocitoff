@@ -13,6 +13,7 @@ gem 'rails', '4.0.2'
    gem 'sqlite3'
    gem 'rails-erd'
    gem 'pry-rails'
+   gem 'rubocop'
  end
 
 group :development, :test do
@@ -41,8 +42,6 @@ gem 'jquery-rails'
 
 gem 'faker'
 
-gem 'capybara'
-
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 
@@ -65,17 +64,3 @@ gem 'mini_magick'
 gem 'will_paginate', '~> 3.0.5'
 
 gem 'factory_girl_rails', '~> 4.0'
-
-#gem 'fog'
-
-# Use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.1.2'
-
-# Use unicorn as the app server
-# gem 'unicorn'
-
-# Use Capistrano for deployment
-# gem 'capistrano', group: :development
-
-# Use debugger
-# gem 'debugger', group: [:development, :test]
