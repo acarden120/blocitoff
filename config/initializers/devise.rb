@@ -18,7 +18,7 @@ Devise.setup do |config|
 
   # ==> Configuration for any authentication mechanism
   # Configure which keys are used when authenticating a user. The default is
-  # just :email. 
+  # just :email.
 
   # Configure parameters from the request object used for authentication. 
 
