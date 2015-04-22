@@ -1,7 +1,6 @@
 FactoryGirl.define do
   factory :item do
-    name "MyString"
-user nil
+    name 'MyString'
+    user nil
   end
-
 end
