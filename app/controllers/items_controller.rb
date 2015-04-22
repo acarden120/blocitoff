@@ -15,14 +15,20 @@ class ItemsController < ApplicationController
     end
   end
 
-  def delete
-    @item = current_user.items.find(params[:id])
+  def destroy
+    @user = User.find(params[:user_id])
+    @item = @user.items.find(params[:id])
+    @items = @user.items.count
 
     if @item.destroy
       flash[:notice] = 'Item was destroyed'
-      redirect_to @user
     else
       flash[:error] = 'There was an error destroying the item. Please try again.'
+    end
+
+    respond_to do |format|
+      format.html
+      format.js
     end
   end
 
