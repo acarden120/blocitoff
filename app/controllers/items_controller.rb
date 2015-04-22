@@ -18,13 +18,8 @@ class ItemsController < ApplicationController
   def destroy
     @user = User.find(params[:user_id])
     @item = @user.items.find(params[:id])
-    @items = @user.items.count
 
-    if @item.destroy
-      flash[:notice] = 'Item was destroyed'
-    else
-      flash[:error] = 'There was an error destroying the item. Please try again.'
-    end
+    @item.destroy
 
     respond_to do |format|
       format.html

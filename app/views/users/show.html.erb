@@ -9,8 +9,7 @@
 </div>
 <hr>
 <div>
-<h3><%= pluralize(@items.count, 'item') %></h3>
- <div class='js-comments-count'><%= pluralize(@items.count, 'item') %></div>
+<div class='js-items-count'><h3><%= pluralize(@items.count, 'item') %></h3></div>
   <div>
   <%= render partial: @items %>
   </div>
