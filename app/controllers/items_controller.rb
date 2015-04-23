@@ -1,5 +1,6 @@
 class ItemsController < ApplicationController
   respond_to :html, :js
+  before_action :authenticate_user!
 
   def create
     @user = current_user
@@ -12,6 +13,18 @@ class ItemsController < ApplicationController
       redirect_to @user
     else
       flash[:error] = 'There was an error saving the item. Please try again.'
+    end
+  end
+
+  def destroy
+    @user = current_user
+    @item = @user.items.find(params[:id])
+
+    @item.destroy
+
+    respond_to do |format|
+      format.html
+      format.js
     end
   end
 
