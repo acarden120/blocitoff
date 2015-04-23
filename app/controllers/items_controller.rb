@@ -1,5 +1,6 @@
 class ItemsController < ApplicationController
   respond_to :html, :js
+  before_action :authenticate_user!
 
   def create
     @user = current_user
@@ -16,7 +17,7 @@ class ItemsController < ApplicationController
   end
 
   def destroy
-    @user = User.find(params[:user_id])
+    @user = current_user
     @item = @user.items.find(params[:id])
 
     @item.destroy
