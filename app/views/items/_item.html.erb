@@ -1,7 +1,7 @@
  <%= content_tag :div, class: 'media', id: "item-#{item.id}" do %>
 <div>
   <ul>
-  <li><b><%= item.name %></tb></b><p><%= link_to " Done", [item.user, item], method: :delete, remote: true, class: 'glyphicon glyphicon-ok' %></p></li><br>
+  <li><b><%= item.name %></tb></b><%= pluralize(item.days_left, ' days left') %><p><%= link_to " Done ", [item.user, item], method: :delete, remote: true, class: 'glyphicon glyphicon-ok' %></p></li><br>
   <ul>
 </div>
 <% end %>
