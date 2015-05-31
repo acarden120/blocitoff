@@ -1,6 +1,6 @@
 <%= form_for [user, item] do |f| %>
   <div class='row'>
-    <div class='col-md-8'><b><%= f.text_field :name, :size => '25%', placeholder: "  Enter your to-do item here" %></b></div>
+    <div class='col-md-8'><b><%= f.text_field :name, :size => '65%', placeholder: "  Enter your to-do item here" %></b></div><br><br>
     <div class='col-md-8'><b><%= f.submit 'Add', class: 'btn btn-success' %></b></div>
   </div>
 <% end %>

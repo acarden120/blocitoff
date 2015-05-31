@@ -7,6 +7,33 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 require 'faker'
 
+  # Create an admin user
+ admin = User.new(
+   name:     'Admin User',
+   email:    'admin2@example.com',
+   password: 'helloworld',
+ )
+ admin.skip_confirmation!
+ admin.save!
+
+  # Create an standard test user
+ admin = User.new(
+   name:     'Sharon Carden',
+   email:    'test@example.com',
+   password: 'abc123456',
+ )
+ admin.skip_confirmation!
+ admin.save!
+
+ # Create an standard test user
+ admin = User.new(
+   name:     'Alan Carden',
+   email:    'test2@example.com',
+   password: 'abc654321',
+ )
+ admin.skip_confirmation!
+ admin.save!
+
 10.times do 
 	user = User.new(
 		name: Faker::Name.name,
