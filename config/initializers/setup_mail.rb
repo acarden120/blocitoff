@@ -5,7 +5,7 @@ if Rails.env.development?
     port:           '587',
     authentication: :plain,
     user_name:      'app35779408@heroku.com',
-    password:       'y0e5hyfz',
+    password:       '7axjvomq5379',
     domain:         'heroku.com',
     enable_starttls_auto: true
   }
