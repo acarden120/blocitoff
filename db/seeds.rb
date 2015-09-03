@@ -18,7 +18,7 @@ require 'faker'
 
   # Create an standard test user
  admin = User.new(
-   name:     'Sharon Carden',
+   name:     'Test1 Account1',
    email:    'test@example.com',
    password: 'abc123456',
  )
